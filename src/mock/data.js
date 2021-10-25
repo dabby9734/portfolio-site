@@ -38,6 +38,15 @@ export const projectsData = [
     url: '',
     repo: 'https://github.com/dabby9734/portfolio-site', // if no repo, the button will not show up
   },
+  {
+    id: nanoid(),
+    img: 'projects-cover/blog-img.jpg',
+    title: 'A blog! 🤠',
+    info: 'A place where I can write some stuff in a more organized fashion 🤡',
+    info2: '',
+    url: '/blog-homepage',
+    repo: '', // if no repo, the button will not show up
+  },
 ];
 
 // CONTACT DATA
