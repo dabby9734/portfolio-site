@@ -1,0 +1,26 @@
+#blog {
+  .blog-post-wrapper {
+    display: inline-block;
+
+    &__title {
+      text-align: left;
+      h1 {
+        font-size: calc(0.5rem + 8vmin);
+        font-weight: 600;
+      }
+
+      p {
+        font-size: calc(0.8rem + 1.25vmin);
+        line-height: 1.65;
+      }
+    }
+
+    &__content {
+      position: relative;
+      max-width: 725px;
+      text-align: left;
+      margin: 0 auto;
+      background-color: white;
+    }
+  }
+}
