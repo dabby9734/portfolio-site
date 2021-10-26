@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Source code on{' '}
+          © {new Date().getFullYear()} dabby - Source code on{' '}
           <a
             href="https://github.com/dabby9734/portfolio-site"
             target="_blank"
