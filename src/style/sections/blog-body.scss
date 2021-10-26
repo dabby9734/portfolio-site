@@ -8,6 +8,12 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
 
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
   .project-wrapper {
     margin-bottom: 15rem;
 
@@ -15,8 +21,9 @@
       margin-bottom: 0rem;
     }
 
-    margin-right: 150px;
-    margin-left: 150px;
+    display: inline-block;
+    max-width: 725px;
+    width: 90%;
 
     &__text {
       text-align: left;

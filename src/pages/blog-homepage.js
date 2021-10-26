@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Fade from 'react-reveal/Fade';
 import Title from '../components/Title/Title';
+// import Footer from '../components/Footer/Footer';
 import { headData } from '../mock/data';
 import '../style/main.scss';
 
@@ -119,6 +120,7 @@ const HomePage = ({ data }) => {
           </div>
         </Container>
       </section>
+      <div />
       <section id="blog-return-button">
         <Fade bottom duration={1000} delay={1000} distance="30px">
           <p className="hero-cta justify-content-center">
@@ -128,6 +130,7 @@ const HomePage = ({ data }) => {
           </p>
         </Fade>
       </section>
+      {/* <Footer /> */}
     </>
   );
 };

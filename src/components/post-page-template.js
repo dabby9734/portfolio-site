@@ -3,6 +3,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Helmet } from 'react-helmet';
 import React from 'react';
 import '../style/main.scss';
+import Footer from './Footer/Footer';
 
 export const query = graphql`
   query PostsByID($id: String!) {
@@ -29,7 +30,7 @@ export default ({ data }) => {
         <html lang="en" />
         <meta name="description" content={frontmatter.description} />
       </Helmet>
-      <section id="blog-header">
+      <section id="blog-header" className="hero">
         <div className="blog-post__title">
           <h1>{frontmatter.title}</h1>
           <p>
@@ -44,20 +45,7 @@ export default ({ data }) => {
           <MDXRenderer>{body}</MDXRenderer>
         </div>
       </section>
-      <section id="blog-footer">
-        <div>
-          <p className="blog-footer__text">
-            © {new Date().getFullYear()} dabby - Source code on{' '}
-            <a
-              href="https://github.com/dabby9734/portfolio-site"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-          </p>
-        </div>
-      </section>
+      <Footer />
     </>
   );
 };
