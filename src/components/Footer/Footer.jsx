@@ -15,14 +15,14 @@ const Footer = () => {
     <footer className="footer navbar-static-bottom">
       <Container>
         <span className="back-to-top">
-          <Link to="hero" smooth duration={1000}>
+          <Link to="footer-scroll-up-target" smooth duration={1000}>
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
         <div className="social-links">
           {networks &&
             networks.map((network) => {
-              console.log(network);
+              // console.log(network);
               const { id, name, url } = network;
               return (
                 <a
