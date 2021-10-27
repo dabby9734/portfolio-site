@@ -4,7 +4,8 @@ import { graphql, Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Fade from 'react-reveal/Fade';
 import Title from '../components/Title/Title';
-// import Footer from '../components/Footer/Footer';
+import NavigationBar from '../components/NavigationBar/NavigationBar';
+import Footer from '../components/Footer/Footer';
 import { headData } from '../mock/data';
 import '../style/main.scss';
 
@@ -89,12 +90,13 @@ const HomePage = ({ data }) => {
         <html lang={lang || 'en'} />
         <meta name="description" content="Navigation page for blog posts" />
       </Helmet>
+      <NavigationBar />
       <section id="blog-body">
         <Container>
-          <Title title="dabby's blog" />
-          <div className="project-wrapper">
+          <div className="blog-nav-wrapper">
+            <Title title="dabby's blog" />
             {data.allMdx.nodes.map(({ excerpt, frontmatter, slug }) => (
-              <div className="project-wrapper__text">
+              <div>
                 <Fade
                   left={isDesktop}
                   bottom={isMobile}
@@ -102,17 +104,24 @@ const HomePage = ({ data }) => {
                   delay={500}
                   distance="30px"
                 >
-                  <div>
-                    <Link to={`/posts/${slug}`} target="_blank">
-                      <h1 className="project-wrapper__text-title">{frontmatter.title}</h1>
-                    </Link>
-                  </div>
-                  <div>
-                    <p>
-                      {`${frontmatter.date.split('T')[0]}, by `}
-                      <em>{frontmatter.author}</em>
-                    </p>
-                    <p>{excerpt || 'Failed to load post excerpt'}</p>
+                  <div className="blog-nav-wrapper__text">
+                    <div>
+                      <Link to={`/posts/${slug}`} target="_blank">
+                        <h1 className="blog-nav-wrapper__text-title">{frontmatter.title}</h1>
+                      </Link>
+                      <p className="blog-nav-wrapper__text-description">
+                        {frontmatter.description}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="blog-nav-wrapper__text-date">
+                        {`${frontmatter.date.split('T')[0].split('-').reverse().join('-')}, by `}
+                        <em>{frontmatter.author}</em>
+                      </p>
+                      <p className="blog-nav-wrapper__text-excerpt">
+                        {excerpt || 'Failed to load post excerpt'}
+                      </p>
+                    </div>
                   </div>
                 </Fade>
               </div>
@@ -121,16 +130,7 @@ const HomePage = ({ data }) => {
         </Container>
       </section>
       <div />
-      <section id="blog-return-button">
-        <Fade bottom duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta justify-content-center">
-            <Link className="cta-btn cta-btn--hero" to="/">
-              Go back
-            </Link>
-          </p>
-        </Fade>
-      </section>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

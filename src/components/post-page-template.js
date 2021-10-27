@@ -3,6 +3,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Helmet } from 'react-helmet';
 import React from 'react';
 import '../style/main.scss';
+import NavigationBar from './NavigationBar/NavigationBar';
 import Footer from './Footer/Footer';
 
 export const query = graphql`
@@ -30,19 +31,21 @@ export default ({ data }) => {
         <html lang="en" />
         <meta name="description" content={frontmatter.description} />
       </Helmet>
-      <section id="blog-header" className="hero">
-        <div className="blog-post__title">
-          <h1>{frontmatter.title}</h1>
-          <p>
-            {`Posted By `}
-            <em>{frontmatter.author}</em>
-            {` on ${frontmatter.date}`}
-          </p>
-        </div>
-      </section>
-      <section id="blog-content">
-        <div>
-          <MDXRenderer>{body}</MDXRenderer>
+      <NavigationBar />
+      <section id="blog">
+        <div className="blog-wrapper">
+          <div className="blog-wrapper__title">
+            <h1>{frontmatter.title}</h1>
+            <h2>{frontmatter.description}</h2>
+            <p>
+              {`Posted By `}
+              <em>{frontmatter.author}</em>
+              {` on ${frontmatter.date}`}
+            </p>
+          </div>
+          <div className="blog-wrapper__content">
+            <MDXRenderer>{body}</MDXRenderer>
+          </div>
         </div>
       </section>
       <Footer />
