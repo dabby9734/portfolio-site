@@ -86,3 +86,60 @@ export const footerData = {
 export const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
+
+export const skillsData = [
+  {
+    id: nanoid(),
+    name: 'Python',
+    level: '90%',
+  },
+  {
+    id: nanoid(),
+    name: 'Javascript',
+    level: '80%',
+  },
+  {
+    id: nanoid(),
+    name: 'MongoDB',
+    level: '75%',
+  },
+  {
+    id: nanoid(),
+    name: 'C++',
+    level: '70%',
+  },
+  {
+    id: nanoid(),
+    name: 'MySQL / SQLite',
+    level: '70%',
+  },
+  {
+    id: nanoid(),
+    name: 'PHP',
+    level: '65%',
+  },
+  {
+    id: nanoid(),
+    name: 'C++',
+    level: '65%',
+  },
+  {
+    id: nanoid(),
+    name: 'CSS / SASS',
+    level: '40%',
+  },
+];
+
+export const experienceData = [
+  {
+    id: nanoid(),
+    title: 'Software Engineer',
+    company: 'Google',
+    companyurl: 'https://www.google.com',
+    location: 'San Francisco, CA',
+    from: 'May 2020',
+    to: 'Present',
+    current: true,
+    description: 'this company was awesome!',
+  },
+];
