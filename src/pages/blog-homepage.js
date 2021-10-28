@@ -51,6 +51,7 @@ const HomePage = ({ data }) => {
     }
   }, []);
 
+  // no blog posts
   if (data.allMdx.nodes.length === 0) {
     return (
       <>
@@ -82,6 +83,8 @@ const HomePage = ({ data }) => {
       </>
     );
   }
+
+  // there are blog posts
   return (
     <>
       <Helmet>
@@ -91,7 +94,7 @@ const HomePage = ({ data }) => {
         <meta name="description" content="Navigation page for blog posts" />
       </Helmet>
       <NavigationBar />
-      <section id="blog-body">
+      <section id="blog-homepage">
         <Container>
           <div className="blog-nav-wrapper">
             <Title title="dabby's blog" />
@@ -107,7 +110,7 @@ const HomePage = ({ data }) => {
                   <div className="blog-nav-wrapper__text">
                     <div>
                       <Link to={`/posts/${slug}`} target="_blank">
-                        <h1 className="blog-nav-wrapper__text-title">{frontmatter.title}</h1>
+                        <h3 className="blog-nav-wrapper__text-title">{frontmatter.title}</h3>
                       </Link>
                       <p className="blog-nav-wrapper__text-description">
                         {frontmatter.description}
