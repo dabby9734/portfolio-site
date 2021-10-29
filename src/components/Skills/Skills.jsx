@@ -33,15 +33,9 @@ const Skills = () => {
             <div className="skills-wrapper__skills">
               {skills.map((skill) => (
                 <div key={skill.id} className="skills-wrapper__skills-item">
-                  <h4 className="skills-wrapper__skills-item__text">{skill.name}</h4>
+                  <h3 className="skills-wrapper__skills-item__text">{skill.name}</h3>
                   <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{ width: skill.level }}
-                      aria-valuenow={skill.level}
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    />
+                    <div className="progress-bar" style={{ width: skill.level }} />
                   </div>
                 </div>
               ))}

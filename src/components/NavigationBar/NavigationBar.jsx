@@ -1,18 +1,17 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-// import logo from '../../images/dabby_teal_square.jpg';
+import logo from '../../images/favicon.png';
 
 const NavigationBar = () => {
   return (
     <div>
       <Fade top>
-        <Navbar bg="light" expand="lg" className="footer-scroll-up-target">
+        <Navbar className="footer-scroll-up-target navbar-custom">
           <Container>
-            {/* <Navbar.Brand href="#home">
-          <img alt="" src={logo} width="30" height="30" className="d-inline-block align-top" />{' '}
-          dabby
-        </Navbar.Brand> */}
+            <Navbar.Brand>
+              <img alt="" src={logo} width="30" height="30" className="d-inline-block align-top" />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

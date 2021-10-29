@@ -31,21 +31,12 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'projects-cover/site-img.png',
+    img: 'projects-cover/site-img-dark.png',
     title: 'This website ◑﹏◐',
     info: "Dabby was panicking as usual about his lack of credentials to apply into some way too high-achiever programs, so he finally decided to take some action and get his portfolio together, and hopefully present it in a way that isn't a mess",
     info2: "Thank god for technologies like gatsby so I don't have to work hard 😅",
     url: '',
     repo: 'https://github.com/dabby9734/portfolio-site', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'projects-cover/blog-img.jpg',
-    title: 'A blog! 🤠',
-    info: 'A place where I can write some stuff in a more organized fashion 🤡',
-    info2: '',
-    url: '/blog-homepage',
-    repo: '', // if no repo, the button will not show up
   },
 ];
 
@@ -140,6 +131,6 @@ export const experienceData = [
     from: 'May 2020',
     to: 'Present',
     current: true,
-    description: 'this company was awesome!',
+    description: 'PLACEHOLDER PARAGRAPH',
   },
 ];

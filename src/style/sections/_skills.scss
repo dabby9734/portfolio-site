@@ -1,19 +1,21 @@
 #skills {
-  background-color: $primary-color;
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  height: 100%;
-  border-top: 0px;
-  -webkit-clip-path: polygon(0 10em, 100% 0, 100% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 10em, 100% 90%, 0 100%);
-  padding-bottom: 10%;
+  // background-color: $primary-color;
+  // background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  // height: 100%;
+  // border-top: 0px;
+  // -webkit-clip-path: polygon(0 10em, 100% 0, 100% 100%, 0 90%);
+  // clip-path: polygon(0 10em, 100% 0, 100% 90%, 0 100%);
+  // padding-bottom: 10%;
   margin-top: -15rem;
-  padding-top: 15rem;
+  // padding-top: 15rem;
 
-  @include respond(tab-land) {
-    height: 100%;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
+  // @include respond(tab-land) {
+  //   height: 100%;
+  //   -webkit-clip-path: none;
+  //   clip-path: none;
+  //   padding-top: 5rem;
+  // }
+  background-color: $oxford-blue-bg;
 
   .skills-wrapper {
     @include respond(phone) {
@@ -26,21 +28,20 @@
 
     &__skills {
       margin: 0 auto;
-      // align-items: center;
       max-width: 70%;
       // max-width: 20.75em;
       // min-height: 20.75em;
       overflow: hidden;
       border-radius: 0.5em;
       text-decoration: none;
-      background: white;
+      background: $oxford-blue;
       padding: 2.75em 2.5em;
       box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
 
       &-item {
         padding-top: 20px;
         .progress {
-          background-color: #dedede;
+          background-color: #a9a9a9;
           &-bar {
             background: linear-gradient(90deg, $primary-color, $secondary-color);
             // width: 80%;
