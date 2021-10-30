@@ -27,10 +27,15 @@ $small-font-size: 1.4rem;
 
 // ANOTHER DARK THEME SET
 
+$oxford-blue-light: #1f2c4fff;
 $oxford-blue-bg: #080c24ff;
 $oxford-blue: #151e34ff;
+
 $blue-crayola: #3071e8ff;
 $blue-crayola-dark: #2c5c9dff;
 $celadon-blue: #1f7ea7ff; //
 $white: #f6fdff; // fake white that's gentler on the eyes
 $maximum-blue-purple: #a6b2ebff;
+
+$light-box-shadow: 0 1.5em 2.5em -0.5em rgba(#ffffff, 0.1);
+$dark-box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);

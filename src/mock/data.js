@@ -124,13 +124,10 @@ export const skillsData = [
 export const experienceData = [
   {
     id: nanoid(),
-    title: 'Software Engineer',
-    company: 'Google',
-    companyurl: 'https://www.google.com',
-    location: 'San Francisco, CA',
-    from: 'May 2020',
-    to: 'Present',
-    current: true,
-    description: 'PLACEHOLDER PARAGRAPH',
+    title: '华岗剧坊',
+    description:
+      'In secondary school, I joined 华岗剧坊, a chinese drama co-curricular activty. I have helped foster strong understanding of lights and sounds operation and choreography in my juniors. My participation in various productions such as 黄城夜韵, HC100 Centennial Musical and more have also refined my acting skills. I have graduated with not just the memories I made, but also teamwork skills and a 自强不息 mindset.',
+    img: 'experiences/hgjf.jpg',
+    imgDescription: "Huagang's logo",
   },
 ];
