@@ -142,7 +142,8 @@ a:active {
 
 .navbar-custom .navbar-nav .nav-link {
   color: $white;
-  &:hover {
+  &:hover,
+  &:focus {
     color: darken(white, 20%);
   }
 }
