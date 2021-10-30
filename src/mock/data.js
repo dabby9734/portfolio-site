@@ -131,3 +131,87 @@ export const experienceData = [
     imgDescription: "Huagang's logo",
   },
 ];
+
+export const achievementsData = [
+  {
+    id: nanoid(),
+    title: 'Australian Maths Competition 2021 (Y10)',
+    award: 'DISTINCTION',
+    description:
+      'The AMC is an engaging 30-problem competition that demonstrates the importance and relevance of mathematics in students’ everyday lives.',
+    linkText: 'Learn more',
+    link: 'https://www.amt.edu.au/australian-mathematics-competition',
+  },
+  {
+    id: nanoid(),
+    title: 'International Chemistry Quiz 2021 (Y10)',
+    award: 'DISTINCTION',
+    description:
+      'The ICQ is a unique chemical education activity, providing a major focus for secondary school students on the relevance of chemistry in an exciting and stimulating way.',
+    linkText: 'Learn more',
+    link: 'https://icquiz.org/',
+  },
+  {
+    id: nanoid(),
+    title: 'Singapore Physics League 2021 (Sec. Schools)',
+    award: 'SILVER',
+    description:
+      'The Singapore Physics League (SPhL) is a 4-hour online contest, in which teams of 3 to 5 students compete to solve challenging physics problems.',
+    linkText: 'Learn more',
+    link: 'https://sgphysicsleague.org/',
+  },
+  {
+    id: nanoid(),
+    title: 'CAT Competition 2021 (Y10)',
+    award: 'CREDIT',
+    description:
+      'The Computational and Algorithmic Thinking (CAT) competition is a one-hour problem-solving competition designed to encourage student curiosity and promote multiple modes of thinking.',
+    linkText: 'Learn more',
+    link: 'https://www.amt.edu.au/cat-competition',
+  },
+  {
+    id: nanoid(),
+    title: 'Singapore Youth Festival 2021 (Drama)',
+    award: 'DISTINCTION',
+    description:
+      'Since 1966, the Singapore Youth Festival (SYF) has been an annual event organised by the Ministry of Education to celebrate the vitality of our youth and their diverse arts talents.',
+    linkText: 'Learn more',
+    link: 'https://www.syf.gov.sg/',
+  },
+  {
+    id: nanoid(),
+    title: 'Projects Day @ HCI 2021',
+    award: 'HIGH DISTINCTION',
+    description:
+      'I embarked on the project "Synthesis of Hybrid Graphene Oxide Membranes for Water Purification" with Isaac Yeap and was awarded high distinction for the innovative solutions presented for water purification.',
+    linkText: 'His website',
+    link: 'https://iysr.netlify.app/',
+  },
+  {
+    id: nanoid(),
+    title: 'Projects Day @ HCI 2020',
+    award: 'HIGH DISTINCTION',
+    description:
+      'I embarked on the project "Extraction and Modification of Chitosan for Water Purification" with some classmates and was awarded high distinction, despite it being my first reserch project!',
+    linkText: 'Hover for more!',
+    link: '#', // cancelling clicks in a hyper unelegant method :)
+  },
+  {
+    id: nanoid(),
+    title: 'Projects Day @ HCI 2019',
+    award: 'HIGH DISTINCTION',
+    description:
+      'I embarked on the project "万事其无疆 \u2022 回顾华中精彩历史" with some friends from chinese drama in the spirit of celebrating Hwa Chong\'s 100th anniversary',
+    linkText: 'Hover for more!',
+    link: '#',
+  },
+  {
+    id: nanoid(),
+    title: 'more achievements on the way!',
+    award: 'Soon..',
+    description:
+      'I am always ready and looking forward to pushing my limits and reaching new heights!',
+    linkText: 'Hover for more!',
+    link: '#',
+  },
+];
