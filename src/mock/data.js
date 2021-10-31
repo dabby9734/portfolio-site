@@ -19,11 +19,10 @@ export const heroData = {
 export const aboutData = {
   img: 'dabby_teal_square.jpg',
   paragraphOne:
-    "Just your average teenager, worrying about grades too much, and mugging way too much for exams people say I shouldn't be worried about 🥲",
+    "I'm a 16 year old student at Hwa Chong Institution, who worries about his grades too much and studies way too much. 😅",
   paragraphTwo:
-    "Sometimes I write some code, but I'm always looking at how to be better at it! 👨🏻‍💻 Also love watching anime but the binge watching isn't great for my eyesight 👀",
-  paragraphThree:
-    'Currently studying hard to hopefully make it into a good university 👨🏻‍🎓 (where I can worry even more about the future)',
+    "Sometimes I write some code, but I'm always looking at how to be better at it! 👨🏻‍💻 Also love watching anime but the binge watching isn't great for my eyesight. 👀",
+  paragraphThree: 'Currently studying hard to hopefully make it into a good university! 👨🏻‍🎓',
   // resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
