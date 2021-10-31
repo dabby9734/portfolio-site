@@ -12,11 +12,11 @@
   background: $oxford-blue-bg;
   padding-bottom: 10%;
 
-  @include respond(tab-land) {
-    height: 100%;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
+  // @include respond(tab-land) {
+  //   height: 100%;
+  //   -webkit-clip-path: none;
+  //   clip-path: none;
+  // }
 
   .about-wrapper {
     @include respond(phone) {
