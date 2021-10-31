@@ -33,7 +33,7 @@ const Experiences = () => {
           <div className="experiences-wrapper__experiences">
             <Row lg="1">
               {experiences.map((experience) => (
-                <Col>
+                <Col key={experience.id}>
                   <Row md={10}>
                     <Fade
                       left={isDesktop}
