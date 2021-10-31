@@ -57,11 +57,6 @@ export const footerData = {
     },
     {
       id: nanoid(),
-      name: 'reddit',
-      url: 'https://www.reddit.com/user/___dabby',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
       url: 'https://sg.linkedin.com/in/liu-weichu-88b12a222',
     },
@@ -79,46 +74,72 @@ export const githubButtons = {
 };
 
 export const skillsData = [
-  {
-    id: nanoid(),
-    name: 'Python',
-    level: '90%',
-  },
-  {
-    id: nanoid(),
-    name: 'Javascript',
-    level: '80%',
-  },
-  {
-    id: nanoid(),
-    name: 'MongoDB',
-    level: '75%',
-  },
-  {
-    id: nanoid(),
-    name: 'C++',
-    level: '70%',
-  },
-  {
-    id: nanoid(),
-    name: 'MySQL / SQLite',
-    level: '70%',
-  },
-  {
-    id: nanoid(),
-    name: 'PHP',
-    level: '65%',
-  },
-  {
-    id: nanoid(),
-    name: 'C++',
-    level: '65%',
-  },
-  {
-    id: nanoid(),
-    name: 'CSS / SASS',
-    level: '40%',
-  },
+  [
+    {
+      id: nanoid(),
+      name: 'Python',
+      level: '95%',
+    },
+    {
+      id: nanoid(),
+      name: 'Web Development - HTML, CSS, JS, PHP, ReactJS',
+      level: '85%',
+    },
+    {
+      id: nanoid(),
+      name: 'Deployment - Github, GitKraken, Gatsby Cloud, repl.it',
+      level: '85%',
+    },
+    {
+      id: nanoid(),
+      name: 'SQL & NoSQL Databases - MySQL, SQLite, MongoDB',
+      level: '75%',
+    },
+    {
+      id: nanoid(),
+      name: 'IDEs - VS Code, Intellij IDEA, Atom',
+      level: '75%',
+    },
+    {
+      id: nanoid(),
+      name: 'C++',
+      level: '70%',
+    },
+    {
+      id: nanoid(),
+      name: 'Java',
+      level: '65%',
+    },
+  ],
+  [
+    {
+      id: nanoid(),
+      name: 'English',
+      level: '100%',
+    },
+    {
+      id: nanoid(),
+      name: 'Chinese',
+      level: '100%',
+    },
+  ],
+  [
+    {
+      id: nanoid(),
+      name: 'Perserverance',
+      level: '100%',
+    },
+    {
+      id: nanoid(),
+      name: 'Adaptivity',
+      level: '95%',
+    },
+    {
+      id: nanoid(),
+      name: 'Teamwork',
+      level: '90%',
+    },
+  ],
 ];
 
 export const experienceData = [

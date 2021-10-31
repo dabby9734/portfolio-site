@@ -18,8 +18,39 @@
   background-color: $oxford-blue-bg;
 
   .skills-wrapper {
-    @include respond(phone) {
-      margin-bottom: 0rem;
+    .grid {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(auto-fit, [col-start], 40vw, [col-end]);
+      grid-template-rows: repeat(auto-fit, [row-start], 20vh, [row-end]);
+    }
+
+    @include respond(tab-port) {
+      .grid {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(80vw, 90vw));
+        grid-template-rows: repeat(auto-fit, minmax(10vw, 15vw));
+      }
+
+      .computing {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: auto;
+      }
+    }
+
+    .computing {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .languages {
+      grid-column-start: 2;
+      grid-column-end: 3;
     }
 
     &__title {
@@ -27,8 +58,6 @@
     }
 
     &__skills {
-      margin: 0 auto;
-      max-width: 70%;
       // max-width: 20.75em;
       // min-height: 20.75em;
       overflow: hidden;
@@ -37,6 +66,12 @@
       background: $oxford-blue;
       padding: 2.75em 2.5em;
       box-shadow: $light-box-shadow;
+      text-align: left;
+
+      h3 {
+        color: $white;
+        font-size: $mid-font-size;
+      }
 
       &-item {
         padding-top: 20px;

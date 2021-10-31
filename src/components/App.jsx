@@ -15,7 +15,6 @@ import {
   heroData,
   aboutData,
   projectsData,
-  skillsData,
   experienceData,
   achievementsData,
   contactData,
@@ -26,17 +25,17 @@ function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
-  const [skills, setSkills] = useState([]);
   const [experiences, setExperiences] = useState([]);
   const [achievements, setAchievements] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
+  // reminder for future me:
+  // check if {} or [] is needed for the state
 
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
-    setSkills([...skillsData]);
     setExperiences([...experienceData]);
     setAchievements([...achievementsData]);
     setContact({ ...contactData });
@@ -45,7 +44,7 @@ function App() {
 
   return (
     <PortfolioProvider
-      value={{ hero, about, projects, skills, experiences, achievements, contact, footer }}
+      value={{ hero, about, projects, experiences, achievements, contact, footer }}
     >
       <NavigationBar />
       <Hero />
