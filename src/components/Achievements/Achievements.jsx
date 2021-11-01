@@ -29,12 +29,18 @@ const Achievements = () => {
               <Title title="Achievements" />
             </div>
           </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-            <div className="achievements-wrapper__achievements">
-              <Row>
-                {achievements.map((achievement) => {
-                  return (
-                    <Col key={achievement.id}>
+          <div className="achievements-wrapper__achievements">
+            <Row>
+              {achievements.map((achievement) => {
+                return (
+                  <Col key={achievement.id}>
+                    <Fade
+                      left={isDesktop}
+                      bottom={isMobile}
+                      duration={1000}
+                      delay={500}
+                      distance="30px"
+                    >
                       <a href={achievement.link} className="data-card">
                         <h3>{achievement.award}</h3>
                         <h4>{achievement.title}</h4>
@@ -57,12 +63,12 @@ const Achievements = () => {
                           </svg>
                         </span>
                       </a>
-                    </Col>
-                  );
-                })}
-              </Row>
-            </div>
-          </Fade>
+                    </Fade>
+                  </Col>
+                );
+              })}
+            </Row>
+          </div>
         </div>
       </Container>
     </section>
