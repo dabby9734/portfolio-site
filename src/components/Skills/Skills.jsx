@@ -26,11 +26,9 @@ const Skills = () => {
     <section id="skills">
       <Container>
         <div className="skills-wrapper">
-          <Fade bottom duration={1000} delay={500} distance="30px">
-            <div className="skills-wrapper__title">
-              <Title title="My Skills" />
-            </div>
-          </Fade>
+          <div className="skills-wrapper__title">
+            <Title title="My Skills" />
+          </div>
           <div className="grid">
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="skills-wrapper__skills computing">

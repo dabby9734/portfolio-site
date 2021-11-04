@@ -25,11 +25,9 @@ const Experiences = () => {
     <section id="experiences">
       <Container>
         <div className="experiences-wrapper">
-          <Fade bottom duration={1000} delay={500} distance="30px">
-            <div className="experiences-wrapper__title">
-              <Title title="Experiences" />
-            </div>
-          </Fade>
+          <div className="experiences-wrapper__title">
+            <Title title="Experiences" />
+          </div>
           <div className="experiences-wrapper__experiences">
             <Row lg="1">
               {experiences.map((experience) => (

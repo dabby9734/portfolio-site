@@ -24,11 +24,9 @@ const Achievements = () => {
     <section id="achievements">
       <Container>
         <div className="achivements-wrapper">
-          <Fade bottom duration={1000} delay={500} distance="30px">
-            <div className="achievements-wrapper__title">
-              <Title title="Achievements" />
-            </div>
-          </Fade>
+          <div className="achievements-wrapper__title">
+            <Title title="Achievements" />
+          </div>
           <div className="achievements-wrapper__achievements">
             <Row>
               {achievements.map((achievement) => {
