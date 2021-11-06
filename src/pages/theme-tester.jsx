@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../style/main.scss';
+import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 import NavigationBar from '../components/NavigationBar/NavigationBar';
 import Footer from '../components/Footer/Footer';
 
@@ -64,6 +65,18 @@ export default () => {
           </div>
         </div>
       </div>
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <label htmlFor="theme-toggler">
+            theme toggler
+            <input
+              type="checkbox"
+              onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />
+          </label>
+        )}
+      </ThemeToggler>
       <Footer />
     </>
   );

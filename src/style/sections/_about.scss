@@ -1,7 +1,7 @@
 #about {
   // background-color: $primary-color;
   // background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  color: $white-color;
+  color: var(--text-color);
   height: 100%;
   border-top: 0px;
   // border: 3px solid $primary-color;
@@ -9,7 +9,7 @@
   // implement https://stackoverflow.com/questions/31854185/how-to-add-border-in-my-clip-path-polygon-css-style
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background: $oxford-blue-bg;
+  background: var(--bg);
   padding-bottom: 10%;
 
   // @include respond(tab-land) {

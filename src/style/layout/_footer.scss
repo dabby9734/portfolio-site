@@ -1,6 +1,5 @@
 .footer {
-  background-color: $oxford-blue;
-  color: $white-color;
+  background-color: var(--card-bg);
   padding: 4.8rem 0;
 
   @include respond(phone) {
@@ -8,15 +7,15 @@
   }
 
   &__text {
-    color: darken(white, 40%);
+    color: var(--footer-text-color);
     font-size: 1.3rem;
 
     a {
-      color: darken(white, 40%);
+      color: var(--footer-text-color);
       font-size: 1.3rem;
       transition: all 0.4s;
       display: inline-block;
-      background-color: $oxford-blue;
+      background-color: var(--card-bg);
 
       &:hover,
       &:active {
@@ -32,7 +31,7 @@
     margin-bottom: 1rem;
     border: 0;
     width: 50%;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid var(--footer-hr-color);
   }
 
   .social-links {
@@ -44,7 +43,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      color: $white-color;
+      color: var(--footer-text-color);
       font-size: 3rem;
       width: 5rem;
       height: 5rem;
@@ -54,11 +53,15 @@
       &:hover {
         transform: translateY(-2px);
       }
+
+      .fa-inverse {
+        color: var(--footer-icon-color);
+      }
     }
   }
 
   .back-to-top i {
-    color: $white-color;
+    color: var(--text-color);
     margin: 1rem 0 $default-font-size;
     transition: all 0.2s ease-in;
     cursor: pointer;
@@ -71,7 +74,7 @@
 
 // .footer {
 //   background-color: $dark-grey;
-//   color: $white-color;
+//   color: var(--text-color);
 //   padding: 4.8rem 0;
 
 //   @include respond(phone) {
@@ -116,7 +119,7 @@
 //     display: flex;
 //     flex-direction: column;
 //     justify-content: center;
-//     color: $white-color;
+//     color: var(--text-color);
 //     font-size: 3rem;
 //     width: 5rem;
 //     height: 5rem;
@@ -130,7 +133,7 @@
 // }
 
 // .back-to-top i {
-//   color: $white-color;
+//   color: var(--text-color);
 //   margin: 1rem 0 $default-font-size;
 //   transition: all 0.2s ease-in;
 //   cursor: pointer;
