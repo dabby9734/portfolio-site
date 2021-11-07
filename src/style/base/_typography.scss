@@ -108,9 +108,9 @@ a:active {
   overflow: hidden;
   border-radius: 0.5em;
   text-decoration: none;
-  background: $oxford-blue;
+  background: var(--card-bg);
   padding: 2.75em 2.5em;
-  box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
+  box-shadow: var(--card-shadow);
 
   &-item {
     padding-top: 20px;
@@ -146,4 +146,28 @@ a:active {
 
 .navbar-toggler-icon {
   background-image: var(--navbar-toggler) !important;
+}
+
+.navbar-text {
+  color: var(--navbar-text-color) !important;
+  font-size: 2rem;
+}
+
+#checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+
+  &:not(:checked) ~ .theme-icon-sun {
+    display: none;
+  }
+
+  &:checked ~ .theme-icon-moon {
+    display: none;
+  }
+}
+
+.theme-toggler-icons {
+  cursor: pointer;
+  margin: 0;
 }
