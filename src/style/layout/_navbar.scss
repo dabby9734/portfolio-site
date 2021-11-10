@@ -1,0 +1,40 @@
+.navbar-custom {
+  background-color: var(--navbar-bg);
+  transition: background $theme-toggle-transition-ms ease-in-out;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--navbar-text-color);
+  &:hover,
+  &:focus {
+    color: var(--text-hover);
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: var(--navbar-toggler) !important;
+}
+
+.navbar-text {
+  color: var(--navbar-text-color) !important;
+  font-size: 2rem;
+}
+
+#checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+
+  &:not(:checked) ~ .theme-icon-sun {
+    display: none;
+  }
+
+  &:checked ~ .theme-icon-moon {
+    display: none;
+  }
+}
+
+.theme-toggler-icons {
+  cursor: pointer;
+  margin: 0;
+}

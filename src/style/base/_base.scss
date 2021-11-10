@@ -9,6 +9,7 @@ body {
   text-align: center;
 }
 
+// dark
 body {
   --bg: #080c24ff;
   --text-color: #f6fdff;
@@ -26,6 +27,7 @@ body {
   --scrollbar-color-hover: rgba(255, 255, 255, 0.3);
 }
 
+// light
 body.light {
   --bg: #ffffff;
   --text-color: #080c24ff;
@@ -41,23 +43,4 @@ body.light {
   --footer-hr-color: rgba(0, 0, 0, 0.1);
   --scrollbar-color: rgba(0, 0, 0, 0.2);
   --scrollbar-color-hover: rgba(0, 0, 0, 0.4);
-}
-
-// scrollbar styling
-::-webkit-scrollbar {
-  width: 20px;
-  transition: background $theme-toggle-transition-ms ease-in-out;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-color);
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--scrollbar-color-hover);
 }

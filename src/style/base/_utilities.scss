@@ -1,0 +1,18 @@
+// scrollbar styling
+::-webkit-scrollbar {
+  width: 20px;
+  transition: background $theme-toggle-transition-ms ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-color-hover);
+}
