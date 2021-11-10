@@ -1,6 +1,7 @@
 // Section
 section {
   padding: 5rem 0rem;
+  transition: background $theme-toggle-transition-ms ease-in-out;
 
   @include respond(phone) {
     border: none;

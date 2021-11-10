@@ -55,3 +55,5 @@ $card-bg--light: red;
 $card-shadow--light: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
 $card-hover--light: #1f5094;
 $navbar-toggler--light: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
+$theme-toggle-transition-ms: 500ms;
