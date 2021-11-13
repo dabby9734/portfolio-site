@@ -11,7 +11,7 @@ const NavigationBar = () => {
         <Navbar expand="sm" className="footer-scroll-up-target navbar-custom">
           <Container>
             <Navbar.Brand>
-              <img alt="" src={logo} className="d-inline-block align-top" />
+              <img alt="" src={logo} width="30" height="30" className="d-inline-block align-top" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
