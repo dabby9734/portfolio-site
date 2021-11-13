@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
-import logo from '../../images/navbar-logo-30x30.png';
+import logo from '../../images/navbar-logo-60x60.png';
 
 const NavigationBar = () => {
   return (
