@@ -26,7 +26,7 @@
       // padding: 3rem;
       // background-color: var(--card-bg);
       padding-top: 20px;
-      margin: 1em auto;
+      margin: 1rem auto 4.8rem;
       overflow: hidden;
       border-radius: 0.5em;
       text-decoration: none;
@@ -36,9 +36,6 @@
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
-      }
-      @include respond(tab-land) {
-        margin-bottom: 4.8rem;
       }
 
       &-title {
