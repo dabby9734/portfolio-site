@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
-import logo from '../../images/favicon.png';
+import logo from '../../images/navbar-logo-30x30.png';
 
 const NavigationBar = () => {
   return (
@@ -11,7 +11,7 @@ const NavigationBar = () => {
         <Navbar expand="sm" className="footer-scroll-up-target navbar-custom">
           <Container>
             <Navbar.Brand>
-              <img alt="" src={logo} width="30" height="30" className="d-inline-block align-top" />
+              <img alt="" src={logo} className="d-inline-block align-top" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
