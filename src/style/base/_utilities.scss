@@ -1,7 +1,6 @@
 // scrollbar styling
 ::-webkit-scrollbar {
   width: 20px;
-  transition: background $theme-toggle-transition-ms ease-in-out;
 }
 
 ::-webkit-scrollbar-track {
