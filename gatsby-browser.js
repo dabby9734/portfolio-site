@@ -7,8 +7,8 @@ const component = {
   pre: CodeBlock,
 };
 
-const wrapRootElement = ({ element }) => {
+/* eslint-disable */
+// intended to be exported in this way
+export const wrapRootElement = ({ element }) => {
   return <MDXProvider components={component}>{element}</MDXProvider>;
 };
-
-export default wrapRootElement;
